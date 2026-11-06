@@ -5,15 +5,15 @@ like a honeypot. Built for AI agents and developers who screen memecoins
 before trading. Read-only: it never holds a wallet, never signs anything,
 never moves funds.
 
-**Live demo (free tier):** `https://appearance-opt-clara-anaheim.trycloudflare.com`
-> ⚠️ The demo runs on a temporary tunnel URL that changes on restart. If the
-> URL above is dead, run the server yourself — it takes one command (below).
+**Live demo (free tier):** `https://honeypot-screener.shares.zrok.io`
+> The demo runs on a stable reserved URL (zrok share). If it is ever down,
+> run the server yourself — it takes one command (below).
 
 ## Quick start
 
 ```bash
 # Check a token (no key, no signup)
-curl -s -X POST https://appearance-opt-clara-anaheim.trycloudflare.com/check \
+curl -s -X POST https://honeypot-screener.shares.zrok.io/check \
   -H 'Content-Type: application/json' \
   -d '{"address":"0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"}'
 ```
